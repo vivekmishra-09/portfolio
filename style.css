@@ -8,6 +8,9 @@
     scroll-behavior: smooth;
 }
 
+
+
+
 a {
     text-decoration: none;
     color: #000;
@@ -95,8 +98,6 @@ ul.navlist {
 }
 
 
-
-
 .about {
     background-color: #121212;
     color: #fff;
@@ -168,6 +169,12 @@ ul.navlist {
   }
   
   
+  
+
+
+
+
+
 .menu-icon {
     position: relative;
     display: block;
@@ -222,7 +229,7 @@ section {
 }
 
 .hero-info h1 {
-    font-size: 3rem;
+    font-size: 3.6rem;
 }
 
 .text-animate {
@@ -233,7 +240,7 @@ section {
 .text-animate h2 {
     font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
     color: transparent;
     -webkit-text-stroke: 0.1vw #770753;
     background: linear-gradient(180deg, rgba(247, 1, 120, 1)0%,
@@ -565,3 +572,276 @@ section {
         padding: 50px 3%;
     }
 }
+
+/* skills */
+/* ===== Skills Section ===== */
+.skills-section {
+    background-color: #121212;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+  }
+  
+  .skills-section .section-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .skills-section .section-subtitle {
+    font-size: 1.2rem;
+    color: #dcdcdc;
+    margin-bottom: 50px;
+  }
+  
+  .skills-category {
+    margin-bottom: 50px;
+  }
+  
+  .skills-category h2 {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 600;
+  }
+  
+  .skills-icons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+  }
+  
+  .skills-icons img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.1));
+    margin-bottom: 20px;
+  }
+  
+  .skills-icons img:hover {
+    transform: scale(1.2);
+  }
+  
+
+
+  .skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .skill-item p {
+    font-size: 0.9rem;
+    color: #dcdcdc;
+    margin: 0;
+  }
+   
+ .skill-item img {
+    width: 50px;   /* thoda chhota kar diya */
+    height: 50px;  /* maintain ratio */
+    transition: transform 0.3s ease;
+    filter: drop-shadow(2px 2px 4px rgba(255, 255, 255, 0.1));
+  }
+ 
+
+/* Education */
+.education-section {
+    background-color: #121212;
+    color: #fff;
+    padding: 80px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    margin-bottom: 60px;
+    font-weight: bold;
+  }
+  
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    background-color: #ffffff;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    padding: 20px 30px;
+    position: relative;
+    width: 50%;
+  }
+  
+  .timeline-item .content {
+    background-color: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    text-align: left;
+  }
+  
+  .timeline-item.left {
+    left: 0;
+  }
+  
+  .timeline-item.right {
+    left: 50%;
+  }
+  
+  .timeline-item::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-color: #ffffff;
+    border-radius: 50%;
+    top: 30px;
+    box-shadow: 0 0 8px #6c63ff;
+  }
+  
+  .timeline-item.left::after {
+    right: -10px;
+  }
+  
+  .timeline-item.right::after {
+    left: -10px;
+  }
+  
+  .date {
+    display: inline-block;
+    background-color: #e0e6ff;
+    color: #5286b7;
+    font-weight: 600;
+    padding: 6px 12px;
+    border-radius: 15px;
+    margin-top: 12px;
+    font-size: 0.9rem;
+  }
+  
+  .university-link {
+    color: #8a84ed;
+    font-weight: 700;
+    text-decoration: none;
+  }
+  
+  .university-link:hover {
+    text-decoration: underline;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .timeline-item {
+      width: 100%;
+      padding-left: 70px;
+      padding-right: 25px;
+      margin-bottom: 30px;
+    }
+  
+    .timeline-item.right {
+      left: 0;
+    }
+  
+    .timeline-item.left {
+      left: 0;
+    }
+  
+    .timeline::after {
+      left: 20px;
+    }
+  
+    .timeline-item::after {
+      left: 10px !important;
+    }
+  }
+  
+
+  /* Theme Dark light  */
+  /* Toggle switch styles */
+.theme-switch-wrapper {
+    display: flex;
+    align-items: center;
+    margin-left: 1rem;
+  }
+  
+  .theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 50px;
+    height: 24px;
+  }
+  
+  .theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    background-color: #ccc;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.4s;
+    border-radius: 34px;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.4s;
+    border-radius: 50%;
+  }
+  
+  input:checked + .slider {
+    background-color: #6c63ff;
+  }
+  
+  input:checked + .slider:before {
+    transform: translateX(26px);
+  }
+  
+  /* Dark mode styles */
+  body.dark-theme {
+    background-color: #121212;
+    color: #fff;
+  }
+  
+  body.dark-theme header {
+    background: #1a1a1a;
+  }
+  
+  body.dark-theme .btn {
+    background: #6c63ff;
+    color: #fff;
+  }
+  
+  body.dark-theme a {
+    color: #9a9aff;
+  }
+  
+  body.dark-theme .navlist li a.active,
+  body.dark-theme .navlist li a:hover {
+    background: none;
+    color: #6c63ff;
+  }
+  
