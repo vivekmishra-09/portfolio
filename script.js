@@ -20,3 +20,23 @@
  text.innerHTML = text.innerHTML.split("").map((char,i)=>
      `${char}`
  ).join("");
+
+
+//  Theme Dark light
+const toggleSwitch = document.querySelector('#checkbox');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'dark') {
+  document.body.classList.add('dark-theme');
+  toggleSwitch.checked = true;
+}
+
+toggleSwitch.addEventListener('change', function () {
+  if (this.checked) {
+    document.body.classList.add('dark-theme');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    document.body.classList.remove('dark-theme');
+    localStorage.setItem('theme', 'light');
+  }
+});
