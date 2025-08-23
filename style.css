@@ -218,8 +218,9 @@ section {
     height: 100%;
     width: 100%;
     display: flex;
-    grid-template-columns: repeat(2, 1fr);
+    justify-content: space-arround;
     align-items: center;
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 4em;
     background: linear-gradient(98deg, #e5eef7 0%, #fff 100%);
 }
