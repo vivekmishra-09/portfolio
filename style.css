@@ -52,6 +52,7 @@ span {
 
 ul.navlist {
     display: flex;
+    margin-left: 5rem;
 }
 
 .navlist li {
